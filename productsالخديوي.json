@@ -1,0 +1,1300 @@
+[
+  {
+    "id": 1,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 5.jpg",
+    "price": 300,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "Dark Gray",
+          "value": "red",
+          "hex": "#3C3C3C ",
+          "images": [
+            "img/وايد ليج/ai 5.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0001"
+  },
+  {
+    "id": 2,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 6.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " ازرق فاتح",
+          "value": "red",
+          "hex": "#91A7C0 ",
+          "images": [
+            "img/وايد ليج/ai 6.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0002"
+  },
+  {
+    "id": 3,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 7.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "Denim Blue",
+          "value": "red",
+          "hex": "#456A86 ",
+          "images": [
+            "img/وايد ليج/ai 7.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0003"
+  },
+  {
+    "id": 4,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 8.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "Denim Blue",
+          "value": "red",
+          "hex": "#5F84A3 ",
+          "images": [
+            "img/وايد ليج/ai 8.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0004"
+  },
+  {
+    "id": 5,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 9.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "اسود",
+          "value": "red",
+          "hex": "#000000 ",
+          "images": [
+            "img/وايد ليج/ai 9.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0005"
+  },
+  {
+    "id": 6,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 10.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "Denim Blue",
+          "value": "red",
+          "hex": "#385E7A ",
+          "images": [
+            "img/وايد ليج/ai 10.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0006"
+  },
+  {
+    "id": 7,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 11.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "Denim Blue",
+          "value": "red",
+          "hex": "#3E6484 ",
+          "images": [
+            "img/وايد ليج/ai 11.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0007"
+  },
+  {
+    "id": 8,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 12.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "جينز أزرق غامق",
+          "value": "red",
+          "hex": "#2E4A5F ",
+          "images": [
+            "img/وايد ليج/ai 12.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0008"
+  },
+  {
+    "id": 9,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 13.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "اسود",
+          "value": "red",
+          "hex": "#000000 ",
+          "images": [
+            "img/وايد ليج/ai 13.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0009"
+  },
+  {
+    "id": 10,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 14.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/وايد ليج/ai 14.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "جينز أزرق بدرجتين (غامق وفاتح)",
+          "value": "red",
+          "hex": "#3E6484 ",
+          "images": [
+            "img/وايد ليج/ai 14.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0010"
+  },
+  {
+    "id": 11,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 15.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "جينز أزرق متوسط فاتح",
+          "value": "red",
+          "hex": "#4C7496 ",
+          "images": [
+            "img/وايد ليج/ai 15.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0011"
+  },
+  {
+    "id": 12,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 17.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أبيض صافي",
+          "value": "red",
+          "hex": "#F5F5F3 ",
+          "images": [
+            "img/وايد ليج/ai 17.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0012"
+  },
+  {
+    "id": 13,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 16.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "جينز بيج فاتح / كريمي",
+          "value": "red",
+          "hex": "#D9D1C4 ",
+          "images": [
+            "img/وايد ليج/ai 16.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0013"
+  },
+  {
+    "id": 14,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 25.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "جينز بني فاتح",
+          "value": "red",
+          "hex": "#9A8777 ",
+          "images": [
+            "img/وايد ليج/ai 25.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0014"
+  },
+  {
+    "id": 15,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai 26.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "رمادي غامق منقوش بأوراق",
+          "value": "red",
+          "hex": "#3A3A3C ",
+          "images": [
+            "img/وايد ليج/ai 26.jpgimg/s.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0015"
+  },
+  {
+    "id": 16,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai18.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "جينز أزرق متوسط منقوش بنقط فاتحة",
+          "value": "red",
+          "hex": "#4E7394 ",
+          "images": [
+            "img/وايد ليج/ai18.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0016"
+  },
+  {
+    "id": 17,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai19.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق داكن",
+          "value": "red",
+          "hex": "#2F4E6A ",
+          "images": [
+            "img/وايد ليج/ai19.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0017"
+  },
+  {
+    "id": 18,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai20.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق كلاسيكي",
+          "value": "red",
+          "hex": "#446C96 ",
+          "images": [
+            "img/وايد ليج/ai20.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0018"
+  },
+  {
+    "id": 19,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai21.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق فاتح",
+          "value": "red",
+          "hex": "#9CB4C5 ",
+          "images": [
+            "img/وايد ليج/ai21.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0019"
+  },
+  {
+    "id": 20,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai22.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "رمادي غامق",
+          "value": "red",
+          "hex": "#3C3C3C ",
+          "images": [
+            "img/وايد ليج/ai22.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0020"
+  },
+  {
+    "id": 21,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai23.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق غامق",
+          "value": "red",
+          "hex": "#2C4A64 ",
+          "images": [
+            "img/وايد ليج/ai23.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0021"
+  },
+  {
+    "id": 22,
+    "name": " بنطلون وايد ليج جينز",
+    "img": "img/وايد ليج/ai24.jpg",
+    "price": 600,
+    "catetory": "WideLegPants",
+    "desc": " بنطلون جينز وايد ليج طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق نيلي",
+          "value": "red",
+          "hex": "#324E73 ",
+          "images": [
+            "img/وايد ليج/ai24.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "WID-0022"
+  }
+
+
+
+
+
+
+
+
+
+  ,
+  {
+    "id": 23,
+    "name": " بنطلون بالون جينز",
+    "img": "img/بالون/111.jpg",
+    "price": 600,
+    "catetory": "Balloon",
+    "desc": " بنطلون جينز بالون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "رمادي غامق بخطوط أمامية",
+          "value": "red",
+          "hex": "#3B3B3B ",
+          "images": [
+            "img/بالون/111.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "bal-001"
+  }
+  ,
+  {
+    "id": 24,
+    "name": " بنطلون بالون جينز",
+    "img": "img/بالون/222.jpg",
+    "price": 600,
+    "catetory": "Balloon",
+    "desc": " بنطلون جينز بالون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " جينز أزرق متوسط بخطوط أمامية",
+          "value": "red",
+          "hex": "#4E6F90 ",
+          "images": [
+            "img/بالون/222.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+        "code_new": "bal-002"
+
+  }
+  ,
+  {
+    "id": 25,
+    "name": " بنطلون بالون جينز",
+    "img": "img/بالون/333.jpg",
+    "price": 600,
+    "catetory": "Balloon",
+    "desc": " بنطلون جينز بالون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " رمادي مزرق بخطوط أمامية",
+          "value": "red",
+          "hex": "#3F4E5C ",
+          "images": [
+            "img/بالون/333.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+        "code_new": "bal-003"
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ,
+  {
+    "id": 26,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/1.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق غامق",
+          "value": "red",
+          "hex": "#2D4A6B ",
+          "images": [
+            "img/شارلستون/1.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-001"
+  }
+  ,
+  {
+    "id": 27,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/aa.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون  شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " كحلي غسيل خفيف",
+          "value": "red",
+          "hex": "#253C5A ",
+          "images": [
+            "img/شارلستون/aa.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-002"
+  }
+  ,
+  {
+    "id": 28,
+   "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/as.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق فاتح جدًا",
+          "value": "red",
+          "hex": "#A2BDD2 ",
+          "images": [
+            "img/شارلستون/as.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-003"
+  }
+  ,
+  {
+    "id": 29,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/kk.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق متوسط",
+          "value": "red",
+          "hex": "#3F6690 ",
+          "images": [
+            "img/شارلستون/kk.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-004"
+  }
+  ,
+  {
+    "id": 30,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/qq.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " أزرق  متوسط",
+          "value": "red",
+          "hex": "#3F6690",
+          "images": [
+            "img/شارلستون/qq.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-005"
+  }
+  ,
+  {
+    "id": 31,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/ss.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " أزرق سماوي فاتح",
+          "value": "red",
+          "hex": "#7093B3 ",
+          "images": [
+            "img/شارلستون/ss.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-006"
+  }
+  ,
+  {
+    "id": 32,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/ات.jpg",
+    "price": 600,
+    "catetory": "BalloCharlestonon",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " جينز أزرق غسيل فاتح ",
+          "value": "red",
+          "hex": "#7FA2C0 ",
+          "images": [
+            "img/شارلستون/ات.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-007"
+  }
+  ,
+  {
+    "id": 33,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/جك.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق فاتح ناعم",
+          "value": "red",
+          "hex": "#93B1C5 ",
+          "images": [
+            "img/شارلستون/جك.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-008"
+  }
+  ,
+  {
+    "id": 34,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/حح.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " أزرق فاتح غسيل متوسط",
+          "value": "red",
+          "hex": "#86A9C4 ",
+          "images": [
+            "img/شارلستون/حح.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-009"
+  }
+  ,
+  {
+    "id": 35,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/صص.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " جينز أزرق ثلجي فاتح",
+          "value": "red",
+          "hex": "#A9C4D3 ",
+          "images": [
+            "img/شارلستون/صص.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-0010"
+  }
+  ,
+  {
+    "id": 36,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/ضضض.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق كحلي غامق خفيف",
+          "value": "red",
+          "hex": "#2E4661 ",
+          "images": [
+            "img/شارلستون/ضضض.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-0011"
+  }
+  ,
+  {
+    "id": 37,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/طك.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " أزرق متوسط ",
+          "value": "red",
+          "hex": "#6E8CA8 ",
+          "images": [
+            "img/شارلستون/طك.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-0012"
+  }
+  ,
+  {
+    "id": 38,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/كك.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": " أزرق نيلي صافي",
+          "value": "red",
+          "hex": "#1F3E66 ",
+          "images": [
+            "img/شارلستون/كك.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+   "code_new": "CHR-0013"
+  }
+  ,
+  {
+    "id": 39,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/شارلستون/وو.jpg",
+    "price": 600,
+    "catetory": "Charleston",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق سماوي فاتح",
+          "value": "red",
+          "hex": "#7CA1C3 ",
+          "images": [
+            "img/شارلستون/وو.jpg"
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "CHR-0014"
+  }
+
+
+
+
+
+
+
+  ,
+  {
+    "id": 40,
+    "name": " بنطلون شارلستون جينز",
+    "img": "img/t.jpg",
+    "price": 600,
+    "catetory": "top",
+    "desc": " بنطلون شارلستون طويل",
+    "images": [
+      "img/k1.jpg",
+      "img/k2.jpg"
+    ],
+    "variants": {
+      "colors": [
+        {
+          "name": "أزرق سماوي فاتح",
+          "value": "red",
+          "hex": "#7CA1C3 ",
+          "images": [
+            "img/t.jpg",
+            "img/tt.jpg",
+            "img/ttt.jpg",
+            "img/tttt.jpg"
+
+          ],
+          "default": true
+        }
+      ],
+      "sizes": [
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    "code_new": "TOP-001"
+  }
+]
