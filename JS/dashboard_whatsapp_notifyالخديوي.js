@@ -16,7 +16,7 @@
   // === إعدادات قابلة للتخصيص ===
   var SCRIPT_URL   = 'https://script.google.com/macros/s/AKfycbxDLZcio1JmGOwjrwhlTwo6TakKOu59Bc6D8nmj4MG9aZXBwxSf38071tc1aTnuo9Rg/exec';
   var COUNTRY_CODE = '20';           // مصر
-  var SHOP_PHONE   = '01287003333';  // ← حط رقم خدمة العملاء
+  var SHOP_PHONE   = '01028764070';  // ← حط رقم خدمة العملاء
   var DELIVERY_DAYS = 3;             // التسليم بعد كم يوم؟
 
   var cache = { rows: {}, lastFetch: 0 };
