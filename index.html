@@ -22,36 +22,45 @@
     <link rel="stylesheet" href="CSS/product_modalالخديوي_FIXED.css">
 
     <link rel="stylesheet" href="CSS/ad-popupالخديوي.css">
-    <link rel="stylesheet" href="CSS/loaderالخديوي.css">
+    
 
 
 
+
+<link rel="stylesheet" href="CSS/moving-bar.css">
 
 
 
 
 
 </head>
-     <script>
+   <script>
   window.AD_POPUP_CONFIG = {
-    // mediaType: 'image' أو 'video'
-    mediaType: 'image',
-    // مسار الصورة أو الفيديو
-    src: 'img/IMG-20251020-WA0041.jpg',
-    // لو فيديو: بوستر اختياري، والأوتوبلاي لازم يكون muted عشان المتصفحات
+    mediaType: 'video',
+    src: 'img/فيديو اعلان.mp4', // غيّر المسار
     poster: '',
-    autoplay: true,
-    muted: true,
-    // العداد بالثواني قبل تفعيل زر الإغلاق
-    countdownSeconds: 3
+    autoplay: true,   // محاولة تشغيل تلقائي
+    muted: true,      // للfallback لو المتصفح منع الصوت
+    controls: true,
+    countdownSeconds: 3,
+    autoCloseOnEnd: true
   };
 </script>
 
 <!-- سكريبت البوب-أب -->
 <script src="JS/ad-popupالخديوي.js"></script>
 <body>
+<!-- ===== PREMIUM FIXED TICKER ===== -->
+<div class="premium-ticker">
+    <div class="scroll-text">
+        🔥 شحن لجميع المحافظات خلال 48 ساعة! — خصومات يومية — Toskanini Store
+    </div>
+</div>
 
 
+
+
+     
     <div class="cart ">
         <div class="top_cart">
             <h3>عناصر العربة : <span class="count_item_cart">0</span></h3>
@@ -83,7 +92,7 @@
     <header>
         <div class="top_headar">
             <div class="container">
-                <a href="#" class="logo"><img src="img/لوجو.jpg" alt=""></a>
+                <a href="index.html" class="logo"><img src="img/لوجو.jpg" alt=""></a>
 
                 <form action="" class="search_box">
 
@@ -124,16 +133,16 @@
                      <ul class=nav_linkc>
                         <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
 
-                          <li class="active"><a href="dashboardالخديوي.html">الصفحة الرئيسية</a></li>
+                           <li class="active"><a href="index.html">الصفحة الرئيسية</a></li>
                         <li><a href="WideLegPants.html">وايد ليج</a></li>
-                        <li><a href="Boyfriend.html">بوي فرند</a></li>
-                        <li><a href="Charleston.html">شارلستون</a></li>
+                       
+                      <li><a href="Charleston.html">شارلستون</a></li>
                         <li><a href="Milton.html">ميلتون</a></li>
                         <li><a href="waterproo.html">وتر بروف</a></li>
-                        <li><a href="Classic.html">كلاسيك</a></li>
-                        <li><a href="Skinny.html">سكيني</a></li>
+                        <li><a href="Jackets.html">الجاكيت</a></li>
+                        <li><a href="kids.html">الاطفالي</a></li>
                         <li><a href="skert.html">جيبه</a></li>
-                        <li><a href="Balloon.html">بالون</a></li>
+                        <li><a href="Balloon.html">بالون فيت</a></li>
                         <li><a href="#foo">موقعنا</a></li>
                         
                     </ul>
@@ -145,6 +154,9 @@
                 </div>
 
             </div>
+
+        
+
         </div>
 
 
@@ -152,11 +164,10 @@
 
 
 
-
+</div>
 
 
     </header>
-
 
 
 
@@ -218,22 +229,16 @@
     <div class="grid">
 
       <article class="card">
-       <a href="WideLegPants.html"> <div class="media"><img src="img/60.jpg" alt="صورة 1"></div></a>
+       <a href="WideLegPants.html"> <div class="media"><img src="img/55.jpg" alt="صورة 1"></div></a>
        <a href="WideLegPants.html"> <div class="body">
           <button class="btn">وايد ليج</button>
         </div></a>
       </article>
 
-      <article class="card">
-      <a href="Boyfriend.html">  <div class="media"><img src="img/لوجو.png" alt="صورة 1"></div></a>
-        <a href="Boyfriend.html"><div class="body">
-          
-          <button class="btn">بوي فرند</button>
-        </div></a>
-      </article>
+      
 
       <article class="card">
-    <a href="Charleston.html">    <div class="media"><img src="img/شارلستون/1.jpg" alt="صورة 1"></div></a>
+    <a href="Charleston.html">    <div class="media"><img src="img/شرلستون.jpg" alt="صورة 1"></div></a>
         <a href="Charleston.html"> <div class="body">
           
           <button class="btn">شارلستون</button>
@@ -241,7 +246,7 @@
       </article>
 
       <article class="card">
-     <a href="Milton.html">   <div class="media"><img src="img/لوجو.png" alt="صورة 1"></div></a>
+     <a href="Milton.html">   <div class="media"><img src="img/الميلتون.jpg" alt="صورة 1"></div></a>
         <a href="Milton.html"><div class="body">
           
           <button class="btn">ميلتون</button>
@@ -249,7 +254,7 @@
       </article>
 
       <article class="card">
-      <a href="waterproo.html">  <div class="media"><img src="img/لوجو.png" alt="صورة 1"></div></a>
+      <a href="waterproo.html">  <div class="media"><img src="img/وتر بروف.jpg" alt="صورة 1"></div></a>
         <a href=" waterproo.html"> <div class="body">
           
           <button class="btn">وتر بروف</button>
@@ -257,24 +262,24 @@
       </article>
 
       <article class="card">
-       <a href="Classic.html"> <div class="media"><img src="img/لوجو.png" alt="صورة 1"></div></a>
-      <a href="Classic.html">  <div class="body">
+       <a href="Jackets.html"> <div class="media"><img src="img/جاكيت.jpg" alt="صورة 1"></div></a>
+      <a href="Jackets.html">  <div class="body">
           
-          <button class="btn">كلاسيك</button>
+          <button class="btn">الجاكيت</button>
         </div></a>
       </article>
 
         <article class="card">
-       <a href="Skinny.html"> <div class="media"><img src="img/لوجو.png" alt="صورة 1"></div></a>
-      <a href="Skinny.html">  <div class="body">
+       <a href="kids.html"> <div class="media"><img src="img/الاطفالي.jpg" alt="صورة 1"></div></a>
+      <a href="kids.html">  <div class="body">
           
-          <button class="btn">سكيني</button>
+          <button class="btn">الاطفالي</button>
         </div></a>
       </article>
 
    
         <article class="card">
-       <a href="skert.html"> <div class="media"><img src="img/لوجو.png" alt="صورة 1"></div></a>
+       <a href="skert.html"> <div class="media"><img src="img/جيبه.jpg" alt="صورة 1"></div></a>
       <a href="skert.html">  <div class="body">
           
           <button class="btn">جيبه</button>
@@ -286,12 +291,13 @@
        <a href="Balloon.html"> <div class="media"><img src="img/بالون/333.jpg" alt="صورة 1"></div></a>
       <a href="Balloon.html">  <div class="body">
           
-          <button class="btn">بالون</button>
+          <button class="btn">بالون فيت</button>
         </div></a>
       </article>
    
     </div>
   </div>
+
 
 
 
@@ -417,6 +423,7 @@
 
 
 
+<script src="JS/moving-bar.js"></script>
 
 
 
@@ -447,7 +454,7 @@
 
 <script src="JS/khedive_modal_tweaks.js"></script>
 
-<script src="JS/loaderالخديوي.js"></script>
+
 
 </body>
 
