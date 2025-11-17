@@ -1,101 +1,147 @@
-
-/*! Ad Popup (الخديوي) - Adds an image/video ad with 5s timer before closing is enabled.
-    How to configure:
+/*! Ad Popup (الخديوي) — v2
+    - يظهر عند كل Refresh (لا يعتمد على LocalStorage)
+    - يحاول تشغيل الفيديو بصوت تلقائيًا (لو المتصفح رفض، يشغّله Muted تلقائيًا)
+    - يُظهر العدّاد 3 ثواني (أو حسب الإعداد) وبعدها يفعّل الإغلاق اليدوي
+    - يمكن الإغلاق يدويًا بزر "إغلاق" أو علامة × أو الضغط خارج المودال بعد العدّاد
+    - (اختياري) يقفل تلقائيًا عند نهاية الفيديو autoCloseOnEnd:true
+    إعدادات اختيارية قبل استدعاء الملف:
       window.AD_POPUP_CONFIG = {
-        mediaType: 'image' | 'video',
-        src: 'img/your-ad.jpg' or 'videos/your-ad.mp4',
-        poster: 'img/poster.jpg'      // optional for video
-        autoplay: true,               // for video
-        muted: true,                  // for video (autoplay requires muted in most browsers)
-        countdownSeconds: 5           // show close after N seconds
+        mediaType: 'video',                 // 'video' | 'image'
+        src: 'assets/ads/intro.mp4',        // مسار الفيديو/الصورة
+        poster: '',                         // اختياري للفيديو
+        autoplay: true,                     // يفضّل true للفيديو
+        muted: true,                        // للبداية الصامتة عند الحاجة
+        controls: true,                     // إظهار أدوات التحكم
+        countdownSeconds: 3,                // بعده يُسمح بالإغلاق اليدوي
+        autoCloseOnEnd: true                // يقفل الإعلان عند انتهاء الفيديو
       }
 */
 (function () {
   const CFG = Object.assign({
-    mediaType: 'image',
-    src: 'img/لوجو.png',
+    mediaType: 'video',
+    src: 'assets/ads/intro.mp4',
     poster: '',
     autoplay: true,
     muted: true,
-    countdownSeconds: 5
+    controls: true,
+    countdownSeconds: 3,
+    autoCloseOnEnd: true
   }, (window.AD_POPUP_CONFIG || {}));
 
-  const makeEl = (tag, cls, html) => {
-    const el = document.createElement(tag);
-    if (cls) el.className = cls;
-    if (html != null) el.innerHTML = html;
-    return el;
-  };
+  const makeEl = (t, c, h) => { const e = document.createElement(t); if (c) e.className = c; if (h != null) e.innerHTML = h; return e; };
 
   function buildPopup() {
-    const overlay = makeEl('div', 'ad-overlay');
-    const modal = makeEl('div', 'ad-modal');
-    const mediaWrap = makeEl('div', 'ad-media-wrap');
+    if (document.querySelector('.ad-overlay')) return;
 
+    const overlay   = makeEl('div','ad-overlay');
+    const modal     = makeEl('div','ad-modal');
+    const mediaWrap = makeEl('div','ad-media-wrap');
+
+    // ===== media =====
     let mediaEl;
     if (CFG.mediaType === 'video') {
-      mediaEl = document.createElement('video');
-      mediaEl.setAttribute('playsinline', '');
-      mediaEl.setAttribute('webkit-playsinline', '');
-      mediaEl.controls = false;
-      mediaEl.autoplay = !!CFG.autoplay;
-      mediaEl.muted = !!CFG.muted;
-      mediaEl.loop = true;
-      if (CFG.poster) mediaEl.poster = CFG.poster;
-      const srcEl = document.createElement('source');
-      srcEl.src = CFG.src;
-      srcEl.type = 'video/mp4';
-      mediaEl.appendChild(srcEl);
-    } else {
-      mediaEl = document.createElement('img');
-      mediaEl.src = CFG.src;
-      mediaEl.alt = 'إعلان';
-      mediaEl.loading = 'eager';
-      mediaEl.decoding = 'async';
-    }
-    mediaWrap.appendChild(mediaEl);
+      const v = document.createElement('video');
+      v.setAttribute('playsinline',''); v.setAttribute('webkit-playsinline','');
+      v.preload  = 'auto';
+      v.autoplay = !!CFG.autoplay;
+      v.muted    = !!CFG.muted;     // قد يبدّل لاحقًا حسب السماحية
+      v.controls = !!CFG.controls;
+      v.loop     = false;
+      if (CFG.poster) v.poster = CFG.poster;
 
-    const footer = makeEl('div', 'ad-footer');
-    const msg = makeEl('div', 'ad-countdown', 'سيتم تفعيل زر الإغلاق بعد <b id="ad-count">'
-      + (CFG.countdownSeconds) + '</b> ثانية');
+      const s = document.createElement('source');
+      s.src  = CFG.src;
+      s.type = 'video/mp4';
+      v.appendChild(s);
+      mediaEl = v;
+      mediaWrap.appendChild(v);
+
+      // محاولة التشغيل بصوت أولًا — إن فشلت، نرجع لميوت تلقائي
+      async function startVideoWithSoundIfPossible() {
+        try {
+          v.muted = false;
+          v.volume = 1;
+          await v.play();                 // يسمح الصوت تلقائيًا؟ ممتاز.
+        } catch (e) {
+          try {
+            v.muted = true;
+            await v.play();               // تشغيل صامت تلقائيًا
+          } catch (_) {
+            const tryAgain = () => { v.play().catch(()=>{}); };
+            v.addEventListener('canplay', tryAgain, { once: true });
+          }
+        }
+      }
+
+      // جدولة بدء التشغيل
+      if (CFG.autoplay) {
+        if (document.visibilityState === 'visible') {
+          startVideoWithSoundIfPossible();
+        } else {
+          document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') startVideoWithSoundIfPossible();
+          }, { once: true });
+        }
+      }
+
+      // إغلاق عند نهاية الفيديو (اختياري)
+      if (CFG.autoCloseOnEnd) v.addEventListener('ended', () => destroy());
+
+      // fallback لصورة لو الفيديو فشل
+      v.addEventListener('error', () => {
+        mediaWrap.innerHTML = '';
+        const img = document.createElement('img');
+        img.src = CFG.poster || CFG.src.replace(/\.(mp4|webm|ogg)$/i,'.jpg');
+        img.alt = 'إعلان';
+        mediaWrap.appendChild(img);
+      });
+    } else {
+      const img = document.createElement('img');
+      img.src = CFG.src;
+      img.alt = 'إعلان';
+      img.loading = 'eager';
+      img.decoding = 'async';
+      mediaEl = img;
+      mediaWrap.appendChild(img);
+    }
+
+    // ===== footer / countdown / close =====
+    const footer   = makeEl('div', 'ad-footer');
+    const msg      = makeEl('div', 'ad-countdown', `سيتم تفعيل زر الإغلاق بعد <b id="ad-count">${CFG.countdownSeconds}</b> ثانية`);
     const closeBtn = makeEl('button', 'ad-close', 'إغلاق الإعلان');
-    const xBadge = makeEl('div', 'ad-x', '&times;');
+    const xBadge   = makeEl('div', 'ad-x', '&times;');
 
     footer.appendChild(msg);
     footer.appendChild(closeBtn);
-
     modal.appendChild(mediaWrap);
     modal.appendChild(footer);
     modal.appendChild(xBadge);
     overlay.appendChild(modal);
-
     document.body.appendChild(overlay);
 
-    // show overlay
-    requestAnimationFrame(() => overlay.classList.add('ad-show'));
+    requestAnimationFrame(()=> overlay.classList.add('ad-show'));
 
-    // start countdown
-    let remain = Math.max(0, parseInt(CFG.countdownSeconds, 10) || 5);
+    // عدّاد يسمح بالإغلاق (بدون إغلاق تلقائي بالعدّاد)
+    let remain = Math.max(0, parseInt(CFG.countdownSeconds,10) || 3);
     const countEl = msg.querySelector('#ad-count');
+
     const enableClose = () => {
       closeBtn.classList.add('ad-enabled');
       xBadge.classList.add('ad-enabled');
       closeBtn.style.cursor = 'pointer';
-      closeBtn.addEventListener('click', () => destroy());
-      xBadge.addEventListener('click', () => destroy());
-      // also allow overlay click outside modal after enabled
-      overlay.addEventListener('click', (e) => {
-        if (!modal.contains(e.target)) destroy();
-      });
+      const doClose = (e) => { e && e.preventDefault(); destroy(); };
+      closeBtn.addEventListener('click', doClose);
+      xBadge.addEventListener('click', doClose);
+      overlay.addEventListener('click', (e) => { if (!modal.contains(e.target)) destroy(); });
     };
 
     const timer = setInterval(() => {
-      remain -= 1;
+      remain--;
       if (remain <= 0) {
         clearInterval(timer);
         if (countEl) countEl.textContent = '0';
         msg.textContent = 'يمكنك إغلاق الإعلان الآن';
-        enableClose();
+        enableClose(); // يسمح بالإغلاق — لا يغلق ذاتياً بالعدّاد
       } else {
         if (countEl) countEl.textContent = String(remain);
       }
@@ -104,26 +150,18 @@
     function destroy() {
       try { clearInterval(timer); } catch {}
       overlay.classList.remove('ad-show');
-      // small fade-out
       overlay.style.opacity = '0';
       setTimeout(() => overlay.remove(), 200);
       try {
         if (mediaEl && mediaEl.tagName === 'VIDEO') {
           mediaEl.pause();
-          mediaEl.src = '';
+          mediaEl.removeAttribute('src');
+          while (mediaEl.firstChild) mediaEl.removeChild(mediaEl.firstChild);
         }
       } catch {}
     }
-
-    // Autoplay video when visible
-    if (mediaEl && mediaEl.tagName === 'VIDEO' && CFG.autoplay) {
-      const play = () => mediaEl.play().catch(() => {});
-      if (document.visibilityState === 'visible') play();
-      document.addEventListener('visibilitychange', play, { once: true });
-    }
   }
 
-  // Wait for DOM then inject
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', buildPopup);
   } else {
