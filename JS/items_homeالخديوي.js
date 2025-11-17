@@ -10,8 +10,8 @@ fetch('productsالخديوي.json')
     const swiper_Charleston   = document.getElementById("swiper_Charleston");
     const swiper_Milton       = document.getElementById("swiper_Milton");
     const swiper_waterproo    = document.getElementById("swiper_waterproo");
-    const swiper_Classic      = document.getElementById("swiper_Classic");
-    const swiper_Skinny       = document.getElementById("swiper_Skinny");
+    const swiper_kids      = document.getElementById("swiper_kids");
+    const swiper_Jackets       = document.getElementById("swiper_Jackets");
     const swiper_skert        = document.getElementById("swiper_skert");
     const swiper_Balloon      = document.getElementById("swiper_Balloon");
     const swiper_top          = document.getElementById("swiper_top");
@@ -73,10 +73,11 @@ fetch('productsالخديوي.json')
     renderByCat(swiper_Charleston,   "Charleston");
     renderByCat(swiper_Milton,       "Milton");
     renderByCat(swiper_waterproo,    "waterproo");
-    renderByCat(swiper_Classic,      "Classic");
-    renderByCat(swiper_Skinny,       "Skinny");
+    renderByCat(swiper_kids,      "kids");
+    renderByCat(swiper_Jackets,       "Jackets");
     renderByCat(swiper_skert,        "skert");
     renderByCat(swiper_Balloon,      "Balloon");
     renderByCat(swiper_top,          "top");
   })
   .catch(e => console.error('Failed to load products:', e));
+
