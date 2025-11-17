@@ -989,7 +989,7 @@ footer .container .row .links a:hover {
 
     header .bottom_header .nav_linkc {
         position: fixed;
-        top: 0;
+        top: 20px;
         left: -400px;
         bottom: 0;
         background: #fff;
@@ -2330,3 +2330,4 @@ h1{margin-bottom:10px;}
 @media (min-width: 1100px){
   .grid{ grid-template-columns: repeat(4,1fr); }
 }
+
