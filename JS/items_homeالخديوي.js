@@ -1,4 +1,4 @@
-// items_homeالخديوي.js — توليد code_new بدون لمس code القديم + عرضهم على الكروت
+// items_homeالخديوي.js — توليد code_new بدون لمس code القديم + عرضهم على الكروت  WideLegPants2
 fetch('productsالخديوي.json')
   .then(r => r.json())
   .then(data => {
@@ -6,12 +6,13 @@ fetch('productsالخديوي.json')
 
     const swiper_items_sale   = document.getElementById("swiper_items_sale");
     const swiper_WideLegPants = document.getElementById("swiper_WideLegPants");
-    const swiper_Boyfriend    = document.getElementById("swiper_Boyfriend");
+    const swiper_WideLegPants2 = document.getElementById("swiper_WideLegPants2");
+    
     const swiper_Charleston   = document.getElementById("swiper_Charleston");
     const swiper_Milton       = document.getElementById("swiper_Milton");
     const swiper_waterproo    = document.getElementById("swiper_waterproo");
-    const swiper_kids      = document.getElementById("swiper_kids");
-    const swiper_Jackets       = document.getElementById("swiper_Jackets");
+    const swiper_Jackets      = document.getElementById("swiper_Jackets");
+    const swiper_kids       = document.getElementById("swiper_kids");
     const swiper_skert        = document.getElementById("swiper_skert");
     const swiper_Balloon      = document.getElementById("swiper_Balloon");
     const swiper_top          = document.getElementById("swiper_top");
@@ -69,15 +70,15 @@ fetch('productsالخديوي.json')
 
     // أقسام
     renderByCat(swiper_WideLegPants, "WideLegPants");
-    renderByCat(swiper_Boyfriend,    "Boyfriend");
+    renderByCat(swiper_WideLegPants2, "WideLegPants2");
+    
     renderByCat(swiper_Charleston,   "Charleston");
     renderByCat(swiper_Milton,       "Milton");
     renderByCat(swiper_waterproo,    "waterproo");
-    renderByCat(swiper_kids,      "kids");
-    renderByCat(swiper_Jackets,       "Jackets");
+    renderByCat(swiper_Jackets,      "Jackets");
+    renderByCat(swiper_kids,       "kids");
     renderByCat(swiper_skert,        "skert");
     renderByCat(swiper_Balloon,      "Balloon");
     renderByCat(swiper_top,          "top");
   })
   .catch(e => console.error('Failed to load products:', e));
-
