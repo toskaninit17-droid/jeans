@@ -7,7 +7,7 @@
     width: 100%;
     background: linear-gradient(135deg, #00ff6a, #ffe600, #ff004c, #00a2ff);
 
-    padding: 10px 0;
+    padding: 4px 0;
     overflow: hidden;
     z-index: 99999;
 }
@@ -15,7 +15,7 @@
 .scroll-text {
     white-space: nowrap;
     display: inline-block;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #000000;
 
@@ -42,7 +42,7 @@ body {
 /* ===== FIX HEADER BELOW TICKER ===== */
 header {
    
-    top: 35px !important;          /* تحت الشريط */
+    top: 28px !important;          /* تحت الشريط */
     left: 0;
     right: 0;
     width: 100%;
